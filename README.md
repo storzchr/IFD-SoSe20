@@ -8,3 +8,4 @@
 <p><a href="JustinMind.pdf">Aufgabe 2 JustInMind Vorstelltung</a></p>
 <p><a href="Kozept_dashboard.bmpr">Aufgabe 2 Konzeptentwurf (Balsamiq)</a></p>
 <p><a href="aufgabe3/main.html">Aufgabe 3 Konzept Mockup</a></p>
+<p><a href="VUI/playground-artyom.html">Aufgabe 3 Konzept Mockup</a></p>
