@@ -18,7 +18,7 @@ window.addEventListener("load", function(): void {
             function(): void {
                 artyom.initialize({
                     lang: "de-DE",
-                    continuous: true,
+                    continuous: false,
                     listen: true,
                     interimResults: true,
                     debug: true
