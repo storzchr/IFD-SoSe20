@@ -8,10 +8,22 @@ window.addEventListener("load", function () {
         }
     });
     artyom.addCommands({
-        indexes:["Status","Übersicht"],
+        indexes:["Hallo","Guten Morgen"],
         smart: false,
         action: function(){
-            artyom.say("Die Zahlen der gestrigen Produktion sind vollständig vorhanden. Willst du eine grobe zusammenfassung oder einen Bericht?");
+            artyom.say("Guten Morgen, welche Informationen kann ich bereit stellen?");
+        }
+    });
+    artyom.addCommands({
+        indexes:["Status","Übersicht","Bericht wiederholen"],
+        smart: false,
+        action: function(i){
+            if(i==0 || i==1){
+                artyom.say("Die Zahlen der gestrigen Produktion sind vollständig vorhanden. Willst du eine grobe zusammenfassung oder einen Bericht?");
+            };
+            if(i==2){
+                artyom.say("Bericht wird wiederholt. Willst du eine grobe zusammenfassung oder einen Bericht?");                
+            }
         }
     });
     artyom.addCommands({
@@ -22,26 +34,36 @@ window.addEventListener("load", function () {
         }
     });
     artyom.addCommands({
-        indexes:["Wie vergleichen diese Daten mit dem letzten Monat?","Vergleich","Verlgeich mit dem letzen Monat"],
+        indexes:["Wie vergleichen diese Daten mit dem letzten Monat?","Vergleich","Vergleich mit dem letzen Monat"],
         smart: false,
         action: function(){
             artyom.say("Die Produktion ist um 12% gestiegen, der Auschuss um 5% gefallen und die Krankmeldungen um 25% gestiegen.");
         }
     });  
     artyom.addCommands({
-        indexes:["Ist es zu Produktionsstopps gekommen?","Produktionsstopp"],
+        indexes:["Ist es zu Produktionsstopps gekommen?","Produktionsstopp","Verschleiß","Wie hoch waren die Verschleißkosten"],
         smart: false,
-        action: function(){
-            artyom.say("Um 13:34 Uhr ist es zu einem teilweisen Stopp der Produktion gekommen.Der Angegeben Grund ist: Systemwarungen");
+        action: function(i){
+            if(i==0 || i==1){
+            artyom.say("Um 13:34 Uhr ist es zu einem teilweisen Stopp der Produktion gekommen.Der Angegebene Grund ist: Systemwartungen");
+            };
+            if(i==2 || i==3){
+            artyom.say("Die Verleißkosten beliefen sich auf 6 543 Euro.");
+            }
         }
-    });
+    }); 
     artyom.addCommands({
-        indexes:["Bericht wiederholen","Wiederholen"],
+        indexes:["Wie viele Krankmeldungen gab es?","Krankmeldungen","Details"],
         smart: false,
-        action: function(){
-            artyom.say("Die Zahlen der gestrigen Produktion sind vollständig vorhanden. Willst du eine grobe zusammenfassung oder einen Bericht?");
+        action: function(i){
+            if(i==0 || i==1){
+            artyom.say("Es haben sich 12 Mitarbeiter krank gemeldet, wovon 9 in der Produktion arbeiten und 3 in der Verwaltung");
+            };
+            if(i==2){
+                artyom.say("Die durschnittliche Kranksheitsdauer beträgt 4 Tage. Hierdurch sind im letzten Monat 86 534 Euro Mehrkosten angefallen.");                
+            }
         }
-    });  
+    }); 
     artyom.addCommands({
         indexes:["Zeig mir eine Zusammenfassung","Zusammenfassung"],
         smart: false,

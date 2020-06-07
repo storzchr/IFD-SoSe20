@@ -7,16 +7,15 @@
     <title>Playgroud Artyom</title>
     <script src="js/libs/artyom.window.min.js"></script>
     <script src="js/playgroud-artyom-script.js"></script>
+    <link rel="stylesheet" type="text/css" href="artyom.css" />
+
 </head>
 <body>
-    <h1 style="text-align: center;">This is a <b>Voice User Interface </b>for a production Executive Officer using artyom.</h1>
-    <button class="button" id="btn">Initiate Voice Synth</button>
-    <p style="text-align: center;">Folgende Befhele sind momentan Funktionsfähig:</p>
-    <p style="text-align: center;">"Bericht","Zeig mir den Bericht"</p>
-    <p style="text-align: center;">"Wie vergleichen diese Daten mit dem letzten Monat?","Vergleich","Verlgeich mit dem letzen Monat"</p>
-    <p style="text-align: center;">"Ist es zu Produktionsstopps gekommen?","Produktionsstopp"</p>
-    <p style="text-align: center;">"Bericht wiederholen","Wiederholen"</p>
-    <p style="text-align: center;">"Zeig mir eine Zusammenfassung","Zusammenfassung"</p>
+  <div id="head">
+    <h1 style="text-align: center;">Dies ist ein <b>Voice User Interface </b>für einen Mitarbeiter der Management-Ebene</h1>
+  </div>
+   <input type="image" id="btn" class="button" src="icon.png">
+  <p style="text-align: center;"><b>Aktivierung durch Klick auf das Icon</b></p>
     <script>
         var Jarvis = new Artyom();
   
@@ -25,7 +24,7 @@
         document.getElementById("btn").addEventListener(
           "click",
           function() {
-            Jarvis.say("Yes?");
+            //Jarvis.say("Yes?");
           },
           false
         );
