@@ -11,3 +11,6 @@
 <p><a href="https://tortu.io/share/937572">VUI Konzept</a></p>
 <p><a href="VUI/vui_audio.mp3">VUI Prototype Aufnahme</a></p>
 <p><a href="VUI/playground-artyom.html">VUI Prototype</a></p>
+<p><a href="ifd6.pdf">Aufgabe 6 VR-Brille</a></p>
+<p><a href="ifd7.pdf">Aufgabe 7 VR-Vorlesung Storyboard</a></p>
+<p><a href="https://youtu.be/OU_Rt5YK53g">Aufgabe 7 VR-Vorlesung Prototype Video</a></p>
