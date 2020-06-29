@@ -14,3 +14,4 @@
 <p><a href="ifd6.pdf">Aufgabe 6 VR-Brille</a></p>
 <p><a href="ifd7.pdf">Aufgabe 7 VR-Vorlesung Storyboard</a></p>
 <p><a href="https://youtu.be/OU_Rt5YK53g">Aufgabe 7 VR-Vorlesung Prototype Video</a></p>
+<p><a href="ifd8.pdf">Aufgabe 8 VR-Prototype</a></p>
